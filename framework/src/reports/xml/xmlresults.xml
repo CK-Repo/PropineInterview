@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="10.904">
+ <testsuite name="NuvPropine Automattion" timestamp="2019-12-05T13:21:02" hostname="localhost" time="10.904" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="NuvPropine Automattion" name="Homepage Launched" time="10.9" />
+ </testsuite>
+</testsuites>
