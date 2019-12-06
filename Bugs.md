@@ -68,7 +68,7 @@ Steps to Reproduce:
 - Current Functionality: Enter First and second number as 111111111111111111 and  result for this is 222222222222222200 which is wrong
 - Expected Fuctionaity : result should be 2.2222222e+17
 
-## Defect 9:  
+## Defect 9:  In chrome the Button is 'Submit' and In Mozilla the Buttom is displayed as 'Submit Query'  
 
 
 
