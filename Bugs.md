@@ -49,7 +49,7 @@ Steps to Reproduce:
 - Expected Functionality: Should consider the blank field as zero and should perform addition [Vise Versa]
 - Current Functionality: submit action is getting triggered and the result for the above data is dislayed as NaN
 
-## Defect 5: user should not be allowed to enter more than one '.' in the numeric fields
+## Defect 6: user should not be allowed to enter more than one '.' in the numeric fields
 Steps to Reproduce:
 
 1. Open the URL https://vast-dawn-73245.herokuapp.com/submit
@@ -58,4 +58,18 @@ Steps to Reproduce:
 4. Click on Submit Button
 - Expected Functionality: Should throw an error saying invalid data
 - Current Functionality: submit action is getting triggered and the result for the above data is dislayed as 10 [its taking the first value and adding those]
+
+## Defect 7: User is able to enter number and space for example '34 34' or '34 @#$' or '34 abc' [Edge Case] 
+- Expected Functionality : User should not be allowd to enter space
+- Current Functionality : it allowing user to enter space and text and special char, and adding the first numbers entered.
+- result is for the input 34 34 + 34 @#$ is 68 which is wrong.
+
+## Defect 8: correct output is calculated with 16 digit value. wrobg result is getting calculated if the number is >16digit. [Edge Case]
+- Current Functionality: Enter First and second number as 111111111111111111 and  result for this is 222222222222222200 which is wrong
+- Expected Fuctionaity : result should be 2.2222222e+17
+
+## Defect 9:  
+
+
+
 
