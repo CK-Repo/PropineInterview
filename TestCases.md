@@ -20,7 +20,7 @@
 - Should be able to add a negative floating point and a positive integer
 
 
-# Negattive cases
+# Negative cases
 - Fields Should not allow text 
 - Fields Should not allow Special Characters other than + - . 
 - Fields should not allow more than one + - .
