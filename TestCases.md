@@ -36,3 +36,6 @@
 
 # security Cases
 - Make sure Cross-site Scripting is not allowed in the site.
+
+# have a question on the Script that is running behind for the Addition of two numbers [why do we have such a huge script]???
+
