@@ -5,7 +5,7 @@
 - enter or space button should click the submit button when the focus is on the button
 - Copy paste should be working from one field to other
 - After Clicking on Submit button the First number and second number should not get cleared.
-- 
+- Cross Broweser Testing [Mozilla and Chrome]
 
 # Positive Cases
 - Should be able to add two positive integers numbers
