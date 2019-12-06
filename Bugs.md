@@ -70,6 +70,12 @@ Steps to Reproduce:
 
 ## Defect 9:  In chrome the Button is 'Submit' and In Mozilla the Buttom is displayed as 'Submit Query'  
 
+## Defect 10 : "Enter 2 numbers to press submit to get the result" text should be "Enter 2 numbers and press submit to get the result."
+
+
+
+
+
 
 
 
