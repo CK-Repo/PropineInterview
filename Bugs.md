@@ -64,7 +64,7 @@ Steps to Reproduce:
 - Current Functionality : it allowing user to enter space and text and special char, and adding the first numbers entered.
 - result is for the input 34 34 + 34 @#$ is 68 which is wrong.
 
-## Defect 8: correct output is calculated with 16 digit value. wrobg result is getting calculated if the number is >16digit. [Edge Case]
+## Defect 8: correct output is calculated with 16 digit value. wrong result is getting calculated if the number is >16digit. [Edge Case]
 - Current Functionality: Enter First and second number as 111111111111111111 and  result for this is 222222222222222200 which is wrong
 - Expected Fuctionaity : result should be 2.2222222e+17
 
