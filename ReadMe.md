@@ -1,10 +1,8 @@
-# Testcases are update
-# Defect list is updated
+# Testcases are update under Testcase.md file
+# Defect list is updated Bugs.md file
+
+
 # Added Positive Scenarios
-
-
-
-
 ## will keep updating the Scripts with all the scenarios[Positive Scenarios are updated].
 
 ### To run the Automation Scripts 
