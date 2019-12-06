@@ -33,4 +33,6 @@
 - Result is not Correct if enter First number more than 16 digit and Second number can be anythig from 1 to >16 digit
 - Result is not Correct if enter Second number more than 16 digit and First number can be anythig from 1 to >16 digit
 - should give the correct result when user enters space or text or special characters in the fields
--
+
+# security Cases
+- Make sure Cross-site Scripting is not allowed in the site.
