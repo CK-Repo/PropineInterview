@@ -1,6 +1,10 @@
 - Url Should Launch Sucessfully
+- Clicking on Propine Logo should go to home page and data will get cleared.
 - Tabbing should work according to the tabindex
 - enter or space button should click the submit button when the focus is on the button
+- Copy paste should be working from one field to other
+- After Clicking on Submit button the First number and second number should not get cleared.
+- 
 
 # Positive Cases
 - Should be able to add two positive integers numbers
@@ -16,7 +20,6 @@
 
 
 # Negattive cases
-
 - Fields Should not allow text 
 - Fields Should not allow Special Characters other than + - . 
 - Fields should not allow more than one + - .
@@ -24,3 +27,9 @@
 - Should not allow multiple zeros before a decimal mark
 - Should not allow a zero before another digit of input
 - Should not allow a double negation
+
+# Edge Cases
+- Result is not Correct if enter First number more than 16 digit and Second number can be anythig from 1 to >16 digit
+- Result is not Correct if enter Second number more than 16 digit and First number can be anythig from 1 to >16 digit
+- should give the correct result when user enters space or text or special characters in the fields
+-
