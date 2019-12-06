@@ -1,4 +1,4 @@
-# Testcases are update under Testcase.md file
+# Testcases are update under Testcases.md file
 # Defect list is updated Bugs.md file
 
 
