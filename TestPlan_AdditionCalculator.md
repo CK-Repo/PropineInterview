@@ -10,7 +10,7 @@ Document Version    : 1.0
 
 ## __1. Introduction__
 
-The Test Plan has been created to communicate the test approach to team members. It includes the objectives, scope, schedule, risks and approach.  This document will clearly identify what the test deliverables will be and what is deemed in and out of scope.
+The Test Plan has been created to communicate the test approach to stakeholders. It includes the objectives, scope, schedule, risks and approach.  This document will clearly identify what the test deliverables will be and what is deemed in and out of scope.
 
 ## __2. Objectives__
 
@@ -28,10 +28,9 @@ The following testing tasks are identified in this test plan.
 ## __3. Scope__
 
 ### __3.1 General__
- While testing, both e2e testing and Smoke testing has been carried out. This will cover the all the functionalities including new and existing functionalities.
 
  ### __3.2 In-Scope__
- Both feature testing and Automation testing are in scope to carry out this release. To know more details on feature testing and regression testing refer section 4
+ Both feature testing and automation testing are in scope to carry out this release. To know more details on feature testing and smoke testing refer section 4
 
  ### __3.3 Out-of-scope__
  performance testing is out of scope
@@ -40,10 +39,10 @@ The following testing tasks are identified in this test plan.
 Test strategy is to be followed to achieve the test objective and execution of test types as mentioned below. 
 
 ### __4.1 Feature Testing__
-As a part of the URL provided and based on the calculator addition functionality, all the features testing can be carried out to make sure the application is working fine.
+As a part of the build provided all the features testing can be carried out to make sure the application is working fine based on calculator addition functionality.
 
 ### __4.2 Smoke Testing__
-As a part of regression testing, ensure all the major functionalities are working fine.
+As a part of smoke testing, ensure all the major functionalities are working fine.
 
 ###  __4.3 Reporting of problem__
 During feature testing and Smoke testing, if any problem has been found then that can be addressed, documented and report it to developer.  Need to create a bug in bug tracking tool. The developers need to start on investigating problems and work on fixing it parallelly.
@@ -52,7 +51,7 @@ During feature testing and Smoke testing, if any problem has been found then tha
 The verification of problem will be done along with the regression/smoke testing.
 
 ### __4.5 Automation Testing__
-Will be automating the smoke suite, all the positive flows by using Protractor, Selenium tools which uses Typescript as the Scripting language.
+Will be automating the smoke suite, all the positive flows by using protractor, selenium tools which uses typescript as the scripting language.
 1.	Creating of base framework with the execution reports.
 2.	Writing the test scripts for smoke suite.
 
@@ -60,7 +59,7 @@ Will be automating the smoke suite, all the positive flows by using Protractor, 
 N.A
 
 ### __4.7 User Acceptance Testing__
-N.A
+N.A for this build provided
 
 ## __5. Entry and Exit Criteria__
 This section contains changes made for testing activities
@@ -81,6 +80,7 @@ All the different phases of testing are completed as per the plan, no high prior
 3. Any change in the date of delivery to QA.
 4. No Performance Test capability
 5. Environment unavailability
+6. smoke Bug fixes
 ```
 
 ### __Impact__ : Medium
