@@ -12,7 +12,6 @@ exports.config = {
     specs: [
     './src/specs/addition-spec.ts'
     ],
-  //specs: ['./src/specs/Login/Login-spec.ts','./src/specs/Events/MultipleEvents-spec.ts'],
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
@@ -68,12 +67,12 @@ exports.config = {
     // Angular sync for non angular apps
     browser.ignoreSynchronization = true;
 
-    fs.emptyDir('./src/reports/xml/', function(err) {
+    fs.emptyDir('./e2e/reports/xml/', function(err) {
       //console.log(err);
     });
 
     browser.getCapabilities().then(function(cap) {
-      fs.emptyDir('./src/reports/' + cap.get('browserName') + '/screenshots', function(err) {
+      fs.emptyDir('./e2e/reports/' + cap.get('browserName') + '/screenshots', function(err) {
         //console.log(err);
       });
     });
@@ -81,7 +80,7 @@ exports.config = {
     jasmine.getEnv().addReporter(
       new jasmineReporters.JUnitXmlReporter({
         consolidateAll: true,
-        savePath: './src/reports/xml/',
+        savePath: './e2e/reports/xml/',
         filePrefix: 'xmlresults'
       })
     );
@@ -93,7 +92,7 @@ exports.config = {
 
           browser.takeScreenshot().then(function(png) {
             var stream = fs.createWriteStream(
-              './src/reports/' + browserName + '/screenshots/' + browserName + '-' + result.fullName + '.png'
+              './e2e/reports/' + browserName + '/screenshots/' + browserName + '-' + result.fullName + '.png'
             );
             stream.write(new Buffer(png, 'base64'));
             stream.end();
@@ -114,7 +113,7 @@ exports.config = {
 
       testConfig = {
         reportTitle: 'Propine Test Execution Report',
-        outputPath: './src/reports/',
+        outputPath: './e2e/reports/',
         outputFilename: 'ExecutionReport',
         screenshotPath: browserName + '/screenshots',
         testBrowser: browserName,
@@ -123,7 +122,7 @@ exports.config = {
         screenshotsOnlyOnFailure: false,
         testPlatform: platform
       };
-      new htmlReporter().from('./src/reports/xml/xmlresults.xml', testConfig);
+      new htmlReporter().from('./e2e/reports/xml/xmlresults.xml', testConfig);
     });
   }
 };
