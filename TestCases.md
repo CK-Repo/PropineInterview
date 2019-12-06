@@ -1,3 +1,7 @@
+- Url Should Launch Sucessfully
+- Tabbing should work according to the tabindex
+- enter or space button should click the submit button when the focus is on the button
+
 # Positive Cases
 - Should be able to add two positive integers numbers
 - Should be able to add a negative integer to a positive floating point number
