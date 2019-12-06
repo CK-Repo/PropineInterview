@@ -37,6 +37,3 @@
 # security Cases
 - Make sure Cross-site Scripting is not allowed in the site.
 
-# have a question on the Script that is running behind for the Addition of two numbers [why do we have such a huge script]???
-# As per my understanfding we are sending an API Post request to the server and getting the result. What is that JS needed for...
-
