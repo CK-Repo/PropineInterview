@@ -28,7 +28,7 @@ The following testing tasks are identified in this test plan.
 ## __3. Scope__
 
 ### __3.1 General__
- While testing, both feature testing and regression testing has been carried out. This will cover the all the functionalities including new and existing functionalities.
+ While testing, both e2e testing and Smoke testing has been carried out. This will cover the all the functionalities including new and existing functionalities.
 
  ### __3.2 In-Scope__
  Both feature testing and Automation testing are in scope to carry out this release. To know more details on feature testing and regression testing refer section 4
@@ -80,16 +80,24 @@ All the different phases of testing are completed as per the plan, no high prior
 2. Scope might change and new issues are added to/or removed from the current list.
 3. Any change in the date of delivery to QA.
 4. No Performance Test capability
+5. Environment unavailability
 ```
 
 ### __Impact__ : Medium
 ```
-- Code not delivered to QA in one build.
+Code not delivered to QA in one build.
+Regression Bug fixes
 ```
 
 ### __Impact__ : Medium-High
 ```
 1. Aspects of the functionality did not pass QA entrance.
+```
+
+### __Impact__  : Low
+```
+Exit Criteria reports
+
 ```
 
 
