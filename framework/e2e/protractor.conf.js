@@ -10,7 +10,7 @@ var fs = require('fs-extra');
 exports.config = {
     allScriptsTimeout: 10000,
     specs: [
-    './src/specs/addition-spec.ts'
+    './src/specs/login-spec.ts'
     ],
   capabilities: {
     browserName: 'chrome',
@@ -30,7 +30,7 @@ exports.config = {
     all: ['e2e/**/*Spec.ts', 'e2e/**/*Spec.ts']
   },
   directConnect: true,
-  baseUrl:  'https://vast-dawn-73245.herokuapp.com/',
+  baseUrl:  'https://www.flipkart.com/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
@@ -67,12 +67,12 @@ exports.config = {
     // Angular sync for non angular apps
     browser.ignoreSynchronization = true;
 
-    fs.emptyDir('./e2e/reports/xml/', function(err) {
+    fs.emptyDir('./reports/xml/', function(err) {
       //console.log(err);
     });
 
     browser.getCapabilities().then(function(cap) {
-      fs.emptyDir('./e2e/reports/' + cap.get('browserName') + '/screenshots', function(err) {
+      fs.emptyDir('./reports/' + cap.get('browserName') + '/screenshots', function(err) {
         //console.log(err);
       });
     });
@@ -80,7 +80,7 @@ exports.config = {
     jasmine.getEnv().addReporter(
       new jasmineReporters.JUnitXmlReporter({
         consolidateAll: true,
-        savePath: './e2e/reports/xml/',
+        savePath: './reports/xml/',
         filePrefix: 'xmlresults'
       })
     );
@@ -92,7 +92,7 @@ exports.config = {
 
           browser.takeScreenshot().then(function(png) {
             var stream = fs.createWriteStream(
-              './e2e/reports/' + browserName + '/screenshots/' + browserName + '-' + result.fullName + '.png'
+              './reports/' + browserName + '/screenshots/' + browserName + '-' + result.fullName + '.png'
             );
             stream.write(new Buffer(png, 'base64'));
             stream.end();
@@ -113,7 +113,7 @@ exports.config = {
 
       testConfig = {
         reportTitle: 'Propine Test Execution Report',
-        outputPath: './e2e/reports/',
+        outputPath: './reports/',
         outputFilename: 'ExecutionReport',
         screenshotPath: browserName + '/screenshots',
         testBrowser: browserName,
@@ -122,7 +122,7 @@ exports.config = {
         screenshotsOnlyOnFailure: false,
         testPlatform: platform
       };
-      new htmlReporter().from('./e2e/reports/xml/xmlresults.xml', testConfig);
+      new htmlReporter().from('./reports/xml/xmlresults.xml', testConfig);
     });
   }
 };
