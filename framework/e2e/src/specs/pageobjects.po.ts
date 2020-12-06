@@ -8,10 +8,10 @@ const Locator: ObjectLocator = new ObjectLocator();
 export class PageObject {
 
     // tslint:disable: quotemark
-    readonly HomePagetext = ['xpath', "//h1[contains(.,'Propine Addition Calculator')]"];
-    readonly Firstnumber = ['name', 'firstNumber'];
-    readonly SecondNumber = ['name', 'secondNumber'];
-    readonly submitbutton = ['xpath', "//input[@type='submit']"];
+    readonly SearchBox = ['id', "twotabsearchtextbox"];
+    readonly Searchicon = ['css', '#nav-search-submit-text > .nav-input'];
+    readonly SearchLink = ['xpath', "//div/img[@class='s-image' and 1]"];
+    readonly Screenshot = ['xpath', "//div/img[@class='s-image' and 1]"];
     readonly result = ['xpath', "//div/div[2]/div"];
     readonly result1 = ['css', ".col-md-6 > div"]
     readonly result2 = '//div/div[2]/div';
